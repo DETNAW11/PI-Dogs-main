@@ -22,6 +22,8 @@ function CardDetails(props) {
         getDetails(props.id);
     }, []);
 
+    console.log('deta', details);
+
     return (
         <>
         {/* <NavHeader searchBar={false} /> */}
@@ -38,6 +40,7 @@ function CardDetails(props) {
                         <p>Temperaments: {details.temperament? details.temperament : "not specified"}</p>
                         <p>Height: {details.height} cm.</p>
                         <p>Weight: {details.weight} kg.</p>
+                        {/* {details.weight && <p>Weight: {details.weight} kg.</p>} */}
                         <p>Life span (in years): {details.life_span}</p>
                     </div>
                 </div>

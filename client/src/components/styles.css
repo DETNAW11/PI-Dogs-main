@@ -30,7 +30,7 @@
   
 
 /* landing */
-#header-landing {
+/* #header-landing {
   position: absolute;
   top: 0;
   left: 0;
@@ -40,7 +40,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+} */
+
+#header-landing {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-15%);
+  width: 100%; /* Asegúrate de definir el ancho al 100% */
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 #header-landing .logo {
   color: #f57309;
@@ -132,15 +146,31 @@
   letter-spacing: 6px;
 }
 
-.social {
-  position: absolute;
+/* .social {
+  position: center;
   z-index: 10;
   bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
+} */
+
+.social {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+ 
+  width: 200px;
+  height: 50px;
 }
+
 
 .social li {
   list-style: none;
